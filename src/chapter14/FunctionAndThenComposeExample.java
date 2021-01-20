@@ -12,6 +12,16 @@ public class FunctionAndThenComposeExample {
 		functionA = (m) -> m.getAddress();
 		functionB = (a) -> a.getCity();
 		
+		functionAB = functionA.andThen(functionB);
+		city = functionAB.apply(
+				new Member("홍길동", "hong", new Address("한국", "서울"))
+		);
+		System.out.println("거주 도시: " + city);
 		
+		functionAB = functionB.compose(functionA);
+		city = functionAB.apply(
+				new Member("홍길동", "hong", new Address("한국", "서울"))
+		);
+		System.out.println("거주 도시: " + city);
 	}
 }
