@@ -1,4 +1,4 @@
-package chapter15;
+package chapter16;
 
 import java.util.Arrays;
 import java.util.Iterator;
