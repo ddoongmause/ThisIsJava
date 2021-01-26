@@ -19,7 +19,7 @@ public class Student3 {
 		this.sex = sex;
 	}
 	
-	public Student3(String namem, int score, Sex sex, City city) {
+	public Student3(String name, int score, Sex sex, City city) {
 		this.name = name;
 		this.score = score;
 		this.sex = sex;
